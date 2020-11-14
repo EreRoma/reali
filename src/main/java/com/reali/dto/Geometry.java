@@ -5,6 +5,7 @@ import com.reali.enumiration.Type;
 import com.reali.model.ListingDetails;
 import lombok.AllArgsConstructor;
 
+import java.util.Arrays;
 import java.util.List;
 
 @AllArgsConstructor
@@ -16,6 +17,6 @@ public class Geometry {
 
     public Geometry(ListingDetails detail) {
         this.type = Type.GEOMETRY.getLabel();
-        this.coordinates = List.of(detail.getLat(), detail.getLng());
+        this.coordinates = Arrays.asList(detail.getLat(), detail.getLng());
     }
 }
